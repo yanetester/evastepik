@@ -14,6 +14,15 @@ def add_task():
         entry.delete(0, tk.END)
 
 
+def delete_task():
+    selected = listbox.curselection()
+    if selected:
+        listbox.delete(selected[0])
+
+
+delete_btn = tk.Button(window, text="Удалить задачу", command=delete_task)
+delete_btn.pack()
+
 btn = tk.Button(window, text="Добавить задачу", command=add_task)
 btn.pack()
 
@@ -21,4 +30,3 @@ listbox = tk.Listbox(window, width=50)
 listbox.pack(pady=10)
 
 window.mainloop()
-""""""
