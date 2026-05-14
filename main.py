@@ -1,4 +1,5 @@
 """тест дедпула"""
+"""ещё апдейт"""
 import tkinter as tk
 
 window = tk.Tk()
