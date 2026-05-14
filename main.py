@@ -31,3 +31,4 @@ listbox = tk.Listbox(window, width=50)
 listbox.pack(pady=10)
 
 window.mainloop()
+"""тест параллельного пуша"""
